@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-light min-h-screen;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 text-sm font-semibold text-white transition-all rounded-lg bg-primary hover:bg-primary-dark focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-dark;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 text-sm font-semibold transition-all rounded-lg bg-dark-lighter text-light hover:bg-dark-lightest focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-dark;
+  }
+  
+  .card {
+    @apply p-6 transition-all rounded-xl bg-dark-lighter hover:bg-dark-lightest hover:shadow-glow;
+  }
+  
+  .heading-gradient {
+    @apply bg-gradient-to-r from-primary via-secondary to-accent-purple bg-clip-text text-transparent animate-gradient;
+  }
+}
+
+/* Modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-lighter rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-lightest;
+}
