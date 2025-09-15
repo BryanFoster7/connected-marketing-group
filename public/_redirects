@@ -1,0 +1,2 @@
+# Redirect www to non-www
+https://www.connectedmarketinggroup.com/* https://connectedmarketinggroup.com/:splat 301!
